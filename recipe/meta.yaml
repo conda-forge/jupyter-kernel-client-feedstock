@@ -1,5 +1,5 @@
 {% set name = "jupyter-kernel-client" %}
-{% set version = "0.4.0" %}
+{% set version = "0.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace("-", "_") }}-{{ version }}.tar.gz
-  sha256: e7f781ec3ae5b1dbd9e41792932abddd8d05e92520408e15d7dcce9f8f5766a7
+  sha256: 24c89c5da175d975d970d3b424a0bb3f7ffd37e72fa318825a36a85c0f8906ec
 
 build:
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
